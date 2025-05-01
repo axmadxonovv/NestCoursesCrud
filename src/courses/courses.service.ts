@@ -40,7 +40,7 @@ export class CoursesService {
   }
 
   delete(id: string): boolean {
-    const index = this.courses.findIndex((c) => c.id === id);
+    const index = this.courses.findIndex((n) => n.id === id);
     if (index === -1) return false;
 
     this.courses.splice(index, 1);
