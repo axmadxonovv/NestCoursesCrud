@@ -11,7 +11,7 @@ type Course = {
 
 @Injectable()
 export class CoursesService {
-  private courses: Course[] = []; // Initialize as empty array of Course type
+  private courses: Course[] = [];
 
   getAll(): Course[] {
     return this.courses;
