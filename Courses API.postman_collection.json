@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "de31bfee-bdfa-4259-be78-f2554940240d",
+		"name": "Courses API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41717470",
+		"_collection_link": "https://tdiu22.postman.co/workspace/TDIU~74d714da-7acc-455b-89e4-ed8255f87d68/collection/41717470-de31bfee-bdfa-4259-be78-f2554940240d?action=share&source=collection_link&creator=41717470"
+	},
+	"item": [
+		{
+			"name": "Get all courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get course by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/courses/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"courses",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1746071622061"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"NestJS \",\n  \"description\": \"organish kerak\",\n  \"price\": 100000,\n  \"teacherName\": \"avazbek\",\n  \"isActive\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update course",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \" Updated\",\n  \"description\": \"Updated \",\n  \"price\": 150000,\n  \"teacherName\": \" Updated\",\n  \"isActive\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/courses/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"courses",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1746071622061"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete course",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/courses/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"courses",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1746071632188"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
